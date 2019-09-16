@@ -3,8 +3,10 @@ package id.ac.polinema.intent;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 public class ProfileParcelableActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -13,10 +15,14 @@ public class ProfileParcelableActivity extends AppCompatActivity {
 
         // TODO: bind here
 
-        Bundle extras = getIntent().getExtras();
-        if (extras != null) {
 
+        Bundle extras = getIntent().getExtras();
+
+
+
+        if (extras != null) {
             // TODO: display value here
+
         }
     }
 }
