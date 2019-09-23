@@ -26,13 +26,13 @@
         android:orientation="horizontal"
         android:weightSum="3"
         >
+
         <TextView
-            android:text="@string/username"
-            android:textSize="20sp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            />
+            android:text="NIM"
+            android:textSize="20sp" />
         <TextView
             android:id="@+id/text_username"
             android:textSize="20sp"
@@ -72,13 +72,13 @@
         android:orientation="horizontal"
         android:weightSum="3"
         >
+
         <TextView
-            android:text="@string/age"
-            android:textSize="20sp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            />
+            android:text="kelas"
+            android:textSize="20sp" />
         <TextView
             android:id="@+id/text_age"
             android:textSize="20sp"

@@ -7,9 +7,9 @@ import android.widget.TextView;
 
 public class ProfileBundleActivity extends AppCompatActivity {
 
-    private TextView usernameText;
+    private TextView idText;
     private TextView nameText;
-    private TextView ageText;
+    private TextView kelasText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,21 +17,21 @@ public class ProfileBundleActivity extends AppCompatActivity {
         setContentView(R.layout.activity_profile_parcelable);
 
         // TODO: bind here
-        usernameText = findViewById(R.id.text_username);
+        idText = findViewById(R.id.text_id);
         nameText = findViewById(R.id.text_name);
-        ageText = findViewById(R.id.text_age);
+        kelasText = findViewById(R.id.text_kelas);
 
         Bundle extras = getIntent().getExtras();
 
-        String username = extras.getString(BundleActivity.USERNAME_KEY);
+        int id = extras.getInt(BundleActivity.ID_KEY);
         String name = extras.getString(BundleActivity.NAME_KEY);
-        int age = extras.getInt(BundleActivity.AGE_KEY);
+        String kelas = extras.getString(BundleActivity.KELAS_KEY);
 
         if (extras != null) {
             // TODO: display value here
-            usernameText.setText(username);
+            idText.setText(String.valueOf(id));
             nameText.setText(name);
-            ageText.setText(String.valueOf(age));
+            kelasText.setText(kelas);
         }
     }
 }

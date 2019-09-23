@@ -27,14 +27,14 @@
         android:weightSum="3"
         >
         <TextView
-            android:text="@string/username"
+            android:text="id"
             android:textSize="20sp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             />
         <TextView
-            android:id="@+id/text_username"
+            android:id="@+id/text_id"
             android:textSize="20sp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -73,14 +73,14 @@
         android:weightSum="3"
         >
         <TextView
-            android:text="@string/age"
+            android:text="kelas"
             android:textSize="20sp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             />
         <TextView
-            android:id="@+id/text_age"
+            android:id="@+id/text_kelas"
             android:textSize="20sp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

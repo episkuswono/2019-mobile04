@@ -9,33 +9,33 @@ import android.widget.EditText;
 
 public class BundleActivity extends AppCompatActivity {
 
-    public static final String USERNAME_KEY = "username";
+    public static final String ID_KEY = "id";
     public static final String NAME_KEY = "name";
-    public static final String AGE_KEY = "age";
+    public static final String KELAS_KEY = "kelas";
 
-    private EditText usernameInput;
+    private EditText idInput;
     private EditText nameInput;
-    private EditText ageInput;
+    private EditText kelasInput;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bundle);
-        usernameInput = findViewById(R.id.input_username);
+        idInput = findViewById(R.id.input_id);
         nameInput = findViewById(R.id.input_name);
-        ageInput = findViewById(R.id.input_age);
+        kelasInput = findViewById(R.id.input_kelas);
     }
 
     public void handleBundleSubmit(View view) {
-        String username = usernameInput.getText().toString();
+        int id = Integer.parseInt((idInput.getText().toString()));
         String name = nameInput.getText().toString();
-        int age = Integer.parseInt(ageInput.getText().toString());
+        String kelas = kelasInput.getText().toString();
 
         Intent intent = new Intent(this, ProfileBundleActivity.class);
 
-        intent.putExtra(USERNAME_KEY, username);
+        intent.putExtra(ID_KEY, id);
         intent.putExtra(NAME_KEY, name);
-        intent.putExtra(AGE_KEY, age);
+        intent.putExtra(KELAS_KEY, kelas);
         startActivity(intent);
     }
 }
